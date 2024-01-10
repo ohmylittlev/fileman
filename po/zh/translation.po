@@ -1,0 +1,143 @@
+# Chinese translations for PACKAGE package.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# phph <phph1990@oulook.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 21:40+0800\n"
+"PO-Revision-Date: 2024-01-10 19:41+0800\n"
+"Last-Translator: phph <phph1990@oulook.com>\n"
+"Language-Team: Chinese\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/mainWindow.cpp:307 src/textEditor.cpp:445
+msgid "Cancel"
+msgstr "取消"
+
+#: src/mainWindow.cpp:306
+msgid "Edit as text"
+msgstr "以文本形式编辑"
+
+#: src/mainWindow.cpp:304
+msgid "Open:"
+msgstr "打开："
+
+#: src/mainWindow.cpp:305
+msgid "View as text"
+msgstr "以文本形式查看"
+
+#: src/mainWindow.cpp:316
+msgid "Question:"
+msgstr "提示："
+
+#: src/mainWindow.cpp:317
+msgid "The file is big. Open anyway?"
+msgstr "这个文件很大，还要打开吗？"
+
+#: src/mainWindow.cpp:318
+msgid "Yes"
+msgstr "是"
+
+#: src/mainWindow.cpp:319
+msgid "No"
+msgstr "否"
+
+#: src/mainWindow.cpp:373
+msgid " selected"
+msgstr " 已选中"
+
+#: src/mainWindow.cpp:377 src/textEditor.cpp:151
+msgid "Copy"
+msgstr "复制"
+
+#: src/mainWindow.cpp:378 src/textEditor.cpp:152
+msgid "Cut"
+msgstr "剪切"
+
+#: src/mainWindow.cpp:381 src/textEditor.cpp:155
+msgid "Paste"
+msgstr "粘贴"
+
+#: src/mainWindow.cpp:383
+msgid "Delete"
+msgstr "删除"
+
+#: src/mainWindow.cpp:385 src/mainWindow.cpp:462
+msgid "Rename"
+msgstr "重命名"
+
+#: src/mainWindow.cpp:387
+msgid "Size"
+msgstr "大小"
+
+#: src/mainWindow.cpp:388
+msgid "Select all"
+msgstr "选择全部"
+
+#: src/mainWindow.cpp:389
+msgid "Select none"
+msgstr "取消选择"
+
+#: src/mainWindow.cpp:390 src/mainWindow.cpp:450
+msgid "New directory"
+msgstr "新建文件夹"
+
+#: src/mainWindow.cpp:391 src/textEditor.cpp:158
+msgid "Quit"
+msgstr "退出"
+
+#. Display a "please wait" message
+#: src/mainWindow.cpp:424
+msgid "Info"
+msgstr "提示"
+
+#: src/mainWindow.cpp:425
+msgid "Please wait..."
+msgstr "请稍等"
+
+#. Open action menu
+#: src/textEditor.cpp:147
+msgid "Actions:"
+msgstr "操作："
+
+#: src/textEditor.cpp:148 src/textEditor.cpp:443
+msgid "Save"
+msgstr "保存"
+
+#: src/textEditor.cpp:156
+msgid "Delete line"
+msgstr "删除行"
+
+#: src/textEditor.cpp:157
+msgid "Duplicate line"
+msgstr "复制行"
+
+#: src/textEditor.cpp:418
+msgid "Error:"
+msgstr "错误："
+
+#: src/textEditor.cpp:419
+msgid "Unable to write file."
+msgstr "无法写入文件"
+
+#: src/textEditor.cpp:420
+msgid "OK"
+msgstr "确定"
+
+#: src/textEditor.cpp:441
+msgid "Warning:"
+msgstr "警告："
+
+#: src/textEditor.cpp:442
+msgid "The file is not saved."
+msgstr "该文件没有保存。"
+
+#: src/textEditor.cpp:444
+msgid "Don't save"
+msgstr "不保存"

@@ -43,6 +43,12 @@ SDL_Texture *g_iconPlus = NULL;
 
 int main(int argc, char* args[])
 {
+
+   setlocale(LC_ALL, "");
+   bindtextdomain("translation", "./lang");
+   bind_textdomain_codeset("translation", "UTF-8");
+   textdomain("translation");
+
    // Init SDL
    if (! SDLUtils::init())
    {

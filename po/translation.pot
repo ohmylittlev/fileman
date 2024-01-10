@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 21:40+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/mainWindow.cpp:307 src/textEditor.cpp:445
+msgid "Cancel"
+msgstr ""
+
+#: src/mainWindow.cpp:306
+msgid "Edit as text"
+msgstr ""
+
+#: src/mainWindow.cpp:304
+msgid "Open:"
+msgstr ""
+
+#: src/mainWindow.cpp:305
+msgid "View as text"
+msgstr ""
+
+#: src/mainWindow.cpp:316
+msgid "Question:"
+msgstr ""
+
+#: src/mainWindow.cpp:317
+msgid "The file is big. Open anyway?"
+msgstr ""
+
+#: src/mainWindow.cpp:318
+msgid "Yes"
+msgstr ""
+
+#: src/mainWindow.cpp:319
+msgid "No"
+msgstr ""
+
+#: src/mainWindow.cpp:373
+msgid " selected"
+msgstr ""
+
+#: src/mainWindow.cpp:377 src/textEditor.cpp:151
+msgid "Copy"
+msgstr ""
+
+#: src/mainWindow.cpp:378 src/textEditor.cpp:152
+msgid "Cut"
+msgstr ""
+
+#: src/mainWindow.cpp:381 src/textEditor.cpp:155
+msgid "Paste"
+msgstr ""
+
+#: src/mainWindow.cpp:383
+msgid "Delete"
+msgstr ""
+
+#: src/mainWindow.cpp:385 src/mainWindow.cpp:462
+msgid "Rename"
+msgstr ""
+
+#: src/mainWindow.cpp:387
+msgid "Size"
+msgstr ""
+
+#: src/mainWindow.cpp:388
+msgid "Select all"
+msgstr ""
+
+#: src/mainWindow.cpp:389
+msgid "Select none"
+msgstr ""
+
+#: src/mainWindow.cpp:390 src/mainWindow.cpp:450
+msgid "New directory"
+msgstr ""
+
+#: src/mainWindow.cpp:391 src/textEditor.cpp:158
+msgid "Quit"
+msgstr ""
+
+#. Display a "please wait" message
+#: src/mainWindow.cpp:424
+msgid "Info"
+msgstr ""
+
+#: src/mainWindow.cpp:425
+msgid "Please wait..."
+msgstr ""
+
+#. Open action menu
+#: src/textEditor.cpp:147
+msgid "Actions:"
+msgstr ""
+
+#: src/textEditor.cpp:148 src/textEditor.cpp:443
+msgid "Save"
+msgstr ""
+
+#: src/textEditor.cpp:156
+msgid "Delete line"
+msgstr ""
+
+#: src/textEditor.cpp:157
+msgid "Duplicate line"
+msgstr ""
+
+#: src/textEditor.cpp:418
+msgid "Error:"
+msgstr ""
+
+#: src/textEditor.cpp:419
+msgid "Unable to write file."
+msgstr ""
+
+#: src/textEditor.cpp:420
+msgid "OK"
+msgstr ""
+
+#: src/textEditor.cpp:441
+msgid "Warning:"
+msgstr ""
+
+#: src/textEditor.cpp:442
+msgid "The file is not saved."
+msgstr ""
+
+#: src/textEditor.cpp:444
+msgid "Don't save"
+msgstr ""

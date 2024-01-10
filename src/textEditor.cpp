@@ -144,18 +144,18 @@ void TextEditor::keyPressed(const SDL_Event &event)
       // Reset timer
       resetTimer();
       // Open action menu
-      Dialog dialog("Actions:");
-      dialog.addOption("Save", 0, g_iconFloppy);
+      Dialog dialog(_("Actions:"));
+      dialog.addOption(_("Save"), 0, g_iconFloppy);
       if (m_textSelectionStart.y != -1 && m_textSelectionEnd.y != -1 && (m_textSelectionStart.x != m_textSelectionEnd.x || m_textSelectionStart.y != m_textSelectionEnd.y))
       {
-         dialog.addOption("Copy", 4, g_iconCopy);
-         dialog.addOption("Cut", 5, g_iconCut);
+         dialog.addOption(_("Copy"), 4, g_iconCopy);
+         dialog.addOption(_("Cut"), 5, g_iconCut);
       }
       if (! m_clipboard.empty())
-         dialog.addOption("Paste", 6, g_iconPaste);
-      dialog.addOption("Delete line", 1, g_iconTrash);
-      dialog.addOption("Duplicate line", 2, g_iconPlus);
-      dialog.addOption("Quit", 3, g_iconQuit);
+         dialog.addOption(_("Paste"), 6, g_iconPaste);
+      dialog.addOption(_("Delete line"), 1, g_iconTrash);
+      dialog.addOption(_("Duplicate line"), 2, g_iconPlus);
+      dialog.addOption(_("Quit"), 3, g_iconQuit);
       switch (dialog.execute())
       {
          case 0: save(); break;
@@ -415,9 +415,9 @@ void TextEditor::save(void)
    std::ofstream ofs(m_title);
    if (! ofs.is_open())
    {
-      Dialog dialog("Error");
-      dialog.addLabel("Unable to write file.");
-      dialog.addOption("OK", 0, g_iconSelect);
+      Dialog dialog(_("Error:"));
+      dialog.addLabel(_("Unable to write file."));
+      dialog.addOption(_("OK"), 0, g_iconSelect);
       return;
    }
    // Write new file
@@ -438,11 +438,11 @@ void TextEditor::quit(void)
 {
    if (m_hasModifications)
    {
-      Dialog dialog("Warning:");
-      dialog.addLabel("The file is not saved.");
-      dialog.addOption("Save", 0, g_iconFloppy);
-      dialog.addOption("Don't save", 1, g_iconNone);
-      dialog.addOption("Cancel", 2, g_iconCancel);
+      Dialog dialog(_("Warning:"));
+      dialog.addLabel(_("The file is not saved."));
+      dialog.addOption(_("Save"), 0, g_iconFloppy);
+      dialog.addOption(_("Don't save"), 1, g_iconNone);
+      dialog.addOption(_("Cancel"), 2, g_iconCancel);
       switch (dialog.execute())
       {
          case 0: save(); break;

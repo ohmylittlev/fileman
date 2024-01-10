@@ -301,10 +301,10 @@ void MainWindow::openHighlightedFile(void)
    // Dialog 'view as text' / 'edit as text'
    int action = -1;
    {
-      Dialog l_dialog("Open:");
-      l_dialog.addOption("View as text", 0, g_iconFileText);
-      l_dialog.addOption("Edit as text", 1, g_iconEdit);
-      l_dialog.addOption("Cancel", 2, g_iconCancel);
+      Dialog l_dialog(_("Open:"));
+      l_dialog.addOption(_("View as text"), 0, g_iconFileText);
+      l_dialog.addOption(_("Edit as text"), 1, g_iconEdit);
+      l_dialog.addOption(_("Cancel"), 2, g_iconCancel);
       action = l_dialog.execute();
    }
    if (action != 0 && action != 1)
@@ -313,10 +313,10 @@ void MainWindow::openHighlightedFile(void)
    // If the file is > 1M, ask for confirmation
    if (m_fileLister[m_cursor].m_size > 1024 * 1024)
    {
-      Dialog l_dialog("Question:");
-      l_dialog.addLabel("The file is big. Open anyway?");
-      l_dialog.addOption("Yes", 0, g_iconSelect);
-      l_dialog.addOption("No", 1, g_iconCancel);
+      Dialog l_dialog(_("Question:"));
+      l_dialog.addLabel(_("The file is big. Open anyway?"));
+      l_dialog.addOption(_("Yes"), 0, g_iconSelect);
+      l_dialog.addOption(_("No"), 1, g_iconCancel);
       if (l_dialog.execute() != 0)
          return;
    }
@@ -370,25 +370,25 @@ void MainWindow::openContextMenu(void)
    int result = -1;
    {
       std::ostringstream oss;
-      oss << nbSelected << " selected";
+      oss << nbSelected << _(" selected");
       Dialog l_dialog (oss.str());
       if (nbSelected > 0)
       {
-         l_dialog.addOption("Copy", 0, g_iconCopy);
-         l_dialog.addOption("Cut", 1, g_iconCut);
+         l_dialog.addOption(_("Copy"), 0, g_iconCopy);
+         l_dialog.addOption(_("Cut"), 1, g_iconCut);
       }
       if (m_clipboard.size() > 0)
-         l_dialog.addOption("Paste", 2, g_iconPaste);
+         l_dialog.addOption(_("Paste"), 2, g_iconPaste);
       if (nbSelected > 0)
-         l_dialog.addOption("Delete", 3, g_iconTrash);
+         l_dialog.addOption(_("Delete"), 3, g_iconTrash);
       if (nbSelected == 1)
-         l_dialog.addOption("Rename", 9, g_iconEdit);
+         l_dialog.addOption(_("Rename"), 9, g_iconEdit);
       if (m_fileLister.getNbSelected('d') > 0)
-         l_dialog.addOption("Size", 4, g_iconDisk);
-      l_dialog.addOption("Select all", 5, g_iconSelect);
-      l_dialog.addOption("Select none", 6, g_iconNone);
-      l_dialog.addOption("New directory", 7, g_iconNewDir);
-      l_dialog.addOption("Quit", 8, g_iconQuit);
+         l_dialog.addOption(_("Size"), 4, g_iconDisk);
+      l_dialog.addOption(_("Select all"), 5, g_iconSelect);
+      l_dialog.addOption(_("Select none"), 6, g_iconNone);
+      l_dialog.addOption(_("New directory"), 7, g_iconNewDir);
+      l_dialog.addOption(_("Quit"), 8, g_iconQuit);
       result = l_dialog.execute();
    }
    switch(result)
@@ -421,8 +421,8 @@ void MainWindow::openContextMenu(void)
       case 4:
       {
          // Display a "please wait" message
-         Dialog dialogPleaseWait("Info");
-         dialogPleaseWait.addLabel("Please wait...");
+         Dialog dialogPleaseWait(_("Info"));
+         dialogPleaseWait.addLabel(_("Please wait..."));
          dialogPleaseWait.render(true);
          IWindow::renderPresent();
          m_fileLister.computeSelectedDirSize(m_title);
@@ -447,7 +447,7 @@ void MainWindow::openContextMenu(void)
       // New directory
       case 7:
       {
-         TextInput textInput("New directory", g_iconNewDir);
+         TextInput textInput(_("New directory"), g_iconNewDir);
          if (textInput.execute() != -2 && ! textInput.getInputText().empty())
          {
             FileUtils::makeDirectory(m_title + (m_title == "/" ? "" : "/") + textInput.getInputText());
@@ -459,7 +459,7 @@ void MainWindow::openContextMenu(void)
       case 9:
       {
          std::string fileSrc = m_fileLister.getSelectFirst();
-         TextInput textInput("Rename", g_iconEdit, fileSrc);
+         TextInput textInput(_("Rename"), g_iconEdit, fileSrc);
          if (textInput.execute() != -2 && ! textInput.getInputText().empty())
          {
             FileUtils::renameFile(m_title + (m_title == "/" ? "" : "/") + fileSrc, m_title + (m_title == "/" ? "" : "/") + textInput.getInputText());

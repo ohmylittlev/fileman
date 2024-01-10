@@ -1,1 +1,4 @@
 fileman.geany
+*.o
+*.po~
+*.mo

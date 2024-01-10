@@ -5,6 +5,11 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 
+#include <libintl.h>
+#include <locale.h>
+
+#define _(STRING) gettext(STRING)
+
 //~ #define INHIBIT(X) X
 #define INHIBIT(X) /* X */
 
@@ -16,8 +21,8 @@
    #define SCREEN_HEIGHT            320
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                14
    #define LINE_HEIGHT              24
    #define ICON_SIZE                24
@@ -32,8 +37,8 @@
    #define SCREEN_HEIGHT            1152
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                48
    #define LINE_HEIGHT              72
    #define ICON_SIZE                58
@@ -44,12 +49,12 @@
 
 // Parameters for rk3566
 #elif defined(DEVICE_RK3566)
-   #define SCREEN_WIDTH             640
-   #define SCREEN_HEIGHT            480
+   #define SCREEN_WIDTH             720
+   #define SCREEN_HEIGHT            720
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                20
    #define LINE_HEIGHT              32
    #define ICON_SIZE                24
@@ -64,8 +69,8 @@
    #define SCREEN_HEIGHT            720
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                48
    #define LINE_HEIGHT              72
    #define ICON_SIZE                58
@@ -80,8 +85,8 @@
    #define SCREEN_HEIGHT            720
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                48
    #define LINE_HEIGHT              72
    #define ICON_SIZE                58
@@ -96,8 +101,8 @@
    #define SCREEN_HEIGHT            720
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                48
    #define LINE_HEIGHT              72
    #define ICON_SIZE                58
@@ -112,8 +117,8 @@
    #define SCREEN_HEIGHT            480
    #define HARDWARE_ACCELERATION    0
    #define FULLSCREEN               1
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                20
    #define LINE_HEIGHT              32
    #define ICON_SIZE                24
@@ -128,8 +133,8 @@
    #define SCREEN_HEIGHT            480
    #define HARDWARE_ACCELERATION    1
    #define FULLSCREEN               0
-   #define FONT_NAME                "NotoSans-Regular.ttf"
-   #define FONT_NAME_MONO           "NotoSansMono-Regular.ttf"
+   #define FONT_NAME                "SarasaUiSC-Regular.ttf"
+   #define FONT_NAME_MONO           "SarasaMonoSlabSC-Regular.ttf"
    #define FONT_SIZE                20
    #define LINE_HEIGHT              32
    #define ICON_SIZE                24
