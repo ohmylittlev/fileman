@@ -45,9 +45,9 @@ int main(int argc, char* args[])
 {
 
    setlocale(LC_ALL, "");
-   bindtextdomain("translation", "./lang");
-   bind_textdomain_codeset("translation", "UTF-8");
-   textdomain("translation");
+   bindtextdomain("fileman", "/usr/share/locale");
+   bind_textdomain_codeset("fileman", "UTF-8");
+   textdomain("fileman");
 
    // Init SDL
    if (! SDLUtils::init())

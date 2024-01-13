@@ -20,7 +20,7 @@ endif
 
 SRC = $(wildcard src/*.cpp)
 OBJ = $(patsubst %cpp,%o,$(SRC))
-DOMAIN = translation
+DOMAIN = fileman
 POT = po/$(DOMAIN).pot
 PO = po/zh/$(DOMAIN).po
 MO = po/zh/$(DOMAIN).mo
