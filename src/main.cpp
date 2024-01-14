@@ -45,7 +45,7 @@ int main(int argc, char* args[])
 {
 
    setlocale(LC_ALL, "");
-   bindtextdomain("fileman", "/usr/share/locale");
+   bindtextdomain("fileman", I18N_PATH);
    bind_textdomain_codeset("fileman", "UTF-8");
    textdomain("fileman");
 

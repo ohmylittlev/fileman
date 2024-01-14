@@ -11,6 +11,7 @@ DEVICE ?= PC
 
 START_PATH ?= "/"
 RES_PATH ?= "./res"
+I18N_PATH ?= "./lang"
 
 ifeq ($(DEVICE),PC)
 	CC = $(CXX)
@@ -26,7 +27,7 @@ PO = po/zh/$(DOMAIN).po
 MO = po/zh/$(DOMAIN).mo
 MO_INSTALL_PATH = lang/zh/LC_MESSAGES
 MO_INSTALL = $(MO_INSTALL_PATH)/$(DOMAIN).mo
-COMPILER_FLAGS =  $(shell $(SDL2_CONFIG) --cflags) -Wall -pedantic -Wfatal-errors -DDEVICE_$(DEVICE) -DSTART_PATH=\"$(START_PATH)\" -DRES_PATH=\"$(RES_PATH)\"
+COMPILER_FLAGS =  $(shell $(SDL2_CONFIG) --cflags) -Wall -pedantic -Wfatal-errors -DDEVICE_$(DEVICE) -DSTART_PATH=\"$(START_PATH)\" -DRES_PATH=\"$(RES_PATH)\" -DI18N_PATH=\"$(I18N_PATH)\"
 LINKER_FLAGS = $(shell $(SDL2_CONFIG) --libs) -lSDL2_image -lSDL2_ttf
 
 all: $(TARGET) $(MO)
